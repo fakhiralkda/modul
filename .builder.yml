@@ -1,0 +1,10 @@
+---
+kind: pipeline
+name: modul
+clone:
+  depth: 1
+steps: 
+  - name: kompres
+    image: runmymind/docker-android-sdk:ubuntu-standalone
+    commands:
+      - bash build.sh
